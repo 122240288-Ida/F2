@@ -302,26 +302,42 @@
   <!-- jQuery + select2 (urutan harus jQuery dulu, baru select2) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#select2Bagian").select2({
-        width: "100%",
-        placeholder: "Select value",
-        language: {
-          noResults: function () { return "Belum ada bagian tersedia"; }
+<script>
+  $(document).ready(function () {
+    // Inisialisasi Select2 dengan Bahasa Indonesia
+    $("#select2Bagian").select2({
+      width: "100%",
+      placeholder: "Pilih Bagian",
+      language: {
+        noResults: function () {
+          return "Belum ada bagian tersedia";
         }
-      });
-
-      $("#pilihan").on("click", function () {
-        var bagian = $("#select2Bagian").val();
-        if (!bagian) {
-          alert("Silakan pilih bagian terlebih dahulu.");
-          return;
-        }
-        alert("Anda memilih bagian: " + $("#select2Bagian").find(":selected").text());
-      });
+      }
     });
-  </script>
+
+    // Event saat tombol "Pilih" diklik
+    $("#pilihan").on("click", function () {
+      var bagianSelected = $("#select2Bagian").val();
+
+      if (!bagianSelected) {
+        alert("Silakan pilih bagian yang tersedia terlebih dahulu.");
+        return;
+      }
+
+      var emailTujuan = "karir@ptsgn.co.id";
+      var subject = encodeURIComponent("Pengajuan Magang - Bagian " + bagianSelected);
+      var body = encodeURIComponent(
+        "Yth. Tim HRD PT Sinergi Gula Nusantara,\n\n" +
+        "Saya bermaksud untuk mengajukan permohonan magang / kerja praktik pada bagian: " + bagianSelected + ".\n\n" +
+        "Terlampir dokumen pendukung (CV / Surat Pengantar Kampus) untuk dipertimbangkan.\n\n" +
+        "Terima kasih."
+      );
+
+      // Membuka aplikasi email / Gmail secara otomatis
+      window.location.href = "mailto:" + emailTujuan + "?subject=" + subject + "&body=" + body;
+    });
+  });
+</script>
 
 </body>
 
