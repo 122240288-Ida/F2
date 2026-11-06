@@ -1,148 +1,124 @@
 <!DOCTYPE html>
 <html lang="id">
- 
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Internship-PT Sinergi Gula Nusantara</title>
+  <title>Internship - PT Sinergi Gula Nusantara</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
- 
+
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
- 
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
- 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
- 
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
- 
-  <!-- =======================================================
-  * Template Name: Moderna
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-   <style>
+
+  <style>
     #carouselExample img[src$="foto3.jpg"] {
       aspect-ratio: 16 / 9;
       object-fit: cover;
       object-position: center;
     }
-    /* Header Latar Putih */
-  .header {
-    background-color: #ffffff !important;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  }
 
-  /* Judul Situs di Header */
-  .header .sitename {
-    color: #333333 !important;
-  }
+    /* Header Latar Putih & Shadow */
+    .header {
+      background-color: #ffffff !important;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
 
-  /* Navigasi: Hanya Beranda yang Biru, Lainnya Hitam/Abu */
-  .navmenu a {
-    color: #333333 !important;
-  }
-  .navmenu a.active {
-    color: #0d6efd !important; /* Warna biru untuk Beranda */
-  }
-  .navmenu a:hover {
-    color: #0d6efd !important;
-  }
+    /* Judul Situs */
+    .header .sitename {
+      color: #333333 !important;
+    }
 
-  /* Paragraf Rata Kiri-Kanan (Justify) */
-  p {
-    text-align: justify;
-  }
+    /* Navigasi: Beranda Abu, Menu Aktif Biru */
+    .navmenu a {
+      color: #333333 !important;
+    }
+    .navmenu a.active, .navmenu a:hover {
+      color: #0d6efd !important;
+    }
+
+    /* Paragraf Rata Kiri-Kanan */
+    p {
+      text-align: justify;
+    }
   </style>
 </head>
- 
+
 <body class="starter-page-page">
- 
+
   <!-- ===== HEADER UTAMA ===== -->
   <header id="header" class="header d-flex align-items-center fixed-top" style="height: auto !important; padding: 15px 0;">
     <div class="container-fluid container-xxxl position-relative d-flex align-items-center justify-content-between">
- 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="Logo SGN" style="height: 80px !important; max-height: none !important; width: auto !important; object-fit: contain;">
+        <img src="assets/img/logo.png" alt="Logo SGN" style="height: 80px !important; width: auto !important; object-fit: contain;">
         <h1 class="sitename">PT Sinergi Gula Nusantara</h1>
       </a>
- 
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="about.html" >Beranda</a></li>
-          <li class="dropdown"><a href="index.html"><span>Tentang Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html">Beranda</a></li>
+          <li class="dropdown"><a href="about.html"><span>Tentang Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="index.html#about">Profil Perusahaan</a></li>
-              <li><a href="index.html#sejarah">Sejarah</a></li>
-              <li><a href="index.html#services">Visi &amp; Misi</a></li>
-              <li><a href="index.html#features">Struktur organisasi</a></li>
-              <li><a href="contact.html">Hubungi Kami</a></li>
+              <li><a href="about.html#sejarah">Sejarah</a></li>
             </ul>
           </li>
-          <li><a href="services.html">Unit Kerja</a></li>
-          <li><a href="portfolio.html">Produksi</a></li>
-          <li><a href="team.html">Karir</a></li>
-          <li><a href="blog.html">Publikasi</a></li>
+          <li><a href="services.html">Bisnis Kami</a></li>
+          <li><a href="portfolio.html">Unit Kerja</a></li>
+          <li><a href="Karir.html" class="active">Karir</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
- 
     </div>
   </header>
- 
+
   <main class="main">
- 
+
     <!-- ===== HERO / HEADER HALAMAN ===== -->
     <section id="hero" class="hero section super dark-background" style="position: relative; overflow: hidden; padding: 170px 0 80px;">
- 
-      <!-- Gambar Background Pabrik -->
-      <img src="assets/img/COMPANY.jpeg" alt="" data-aos="fade-in"
-           style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(40%); z-index: 1;">
- 
-      <!-- Konten Teks di Atas Background -->
+      <img src="assets/img/COMPANY.jpeg" alt="" data-aos="fade-in" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(40%); z-index: 1;">
+      
       <div class="container position-relative" style="z-index: 2; text-align: center; color: #fff;">
         <h1 style="font-size: 56px; font-weight: 700; margin-bottom: 20px;">Internship</h1>
-        <p style="max-width: 600px; margin: 0 auto 20px auto; font-size: 18px; opacity: 0.8;">
+        <p style="max-width: 600px; margin: 0 auto 20px auto; font-size: 18px; opacity: 0.8; text-align: center;">
           Program magang PT Sinergi Gula Nusantara bagi siswa/i SMK dan mahasiswa.
         </p>
- 
-        <!-- Navigasi Breadcrumbs -->
+
         <nav class="breadcrumbs" style="display: inline-block;">
           <ol style="display: flex; gap: 10px; list-style: none; padding: 0; margin: 0;">
-            <li><a href="about.html" style="color: #fff; opacity: 0.7; text-decoration: none;">Beranda</a></li>
+            <li><a href="index.html" style="color: #fff; opacity: 0.7; text-decoration: none;">Beranda</a></li>
             <li style="color: #fff;">/</li>
             <li class="current" style="color: #fff; font-weight: 600;">Internship</li>
           </ol>
         </nav>
- 
-        <!-- Pengajuan & Syarat dan Ketentuan -->
+
         <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
           <a href="Pengajuan.html" class="btn btn-light px-4">Pengajuan</a>
           <a href="#syarat" class="btn btn-outline-light px-4">Syarat &amp; Ketentuan</a>
         </div>
       </div>
- 
     </section>
- 
+
     <!-- ===== KONTEN INTERNSHIP ===== -->
     <section id="syarat" class="section" style="scroll-margin-top: 110px;">
       <div class="container" data-aos="fade-up">
- 
         <div class="card mb-4">
- 
+          
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -167,20 +143,18 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
- 
+
           <h5 class="card-header">INTERNSHIP</h5>
- 
           <div class="card-body">
             <p>Sebagai wujud komitmen dan kontribusi dalam menciptakan link and match antara dunia pendidikan dan dunia industri, PT SGN membuka kesempatan program magang bagi siswa/i SMK dan mahasiswa dari berbagai perguruan tinggi. Berikut kriteria peserta yang kami butuhkan:</p>
- 
+            
             <ul style="list-style-type: lower-alpha;">
               <li>Memiliki motivasi dan minat tinggi terhadap bidang agroindustri gula dan bidang lainnya sesuai dengan penempatan Calon Peserta Magang.</li>
               <li>Disiplin, jujur, mampu bekerja sama dalam tim, serta dapat menjaga etika dan integritas selama menjalani program.</li>
               <li>Siap mengikuti peraturan perusahaan, termasuk jam kerja, etika berpakaian, dan tata tertib lingkungan kerja.</li>
             </ul>
- 
+
             <p>Persyaratan yang perlu disiapkan peserta untuk mendaftar:</p>
- 
             <ol>
               <li>Surat Pengantar dari Universitas / Lembaga Pendidikan yang ditujukan kepada Direktur SDM TI</li>
               <li>Memiliki BPJS Ketenagakerjaan</li>
@@ -189,109 +163,97 @@
               <li>Link drive untuk tidak dibatasi saat melakukan input berkas.</li>
             </ol>
           </div>
- 
+
           <p class="text-center">Silakan klik tombol di bawah ini untuk melakukan pengajuan.</p>
- 
           <div class="d-grid mb-5 gap-2 col-10 col-md-3 mx-auto">
             <a href="Pengajuan.html" class="btn btn-primary">Pengajuan</a>
           </div>
- 
+
         </div>
- 
       </div>
     </section>
- 
+
   </main>
- 
+
   <!-- ===== FOOTER ===== -->
-<footer id="footer" class="footer dark-background text-center">
-
-  <div class="container footer-top text-center">
-    <!-- Row 1: Informasi Perusahaan (Kantor Pusat, Telepon, Email) -->
-    <div class="row justify-content-center text-center mb-4">
-      <div class="col-lg-8 col-md-10 footer-about text-center">
-        <a href="index.html" class="d-flex align-items-center justify-content-center mb-2">
-          <span class="sitename text-center">PT Sinergi Gula Nusantara</span>
-        </a>
-        <div class="footer-contact text-center">
-          <p class="mb-1 text-center"><strong>Kantor Pusat</strong></p>
-          <p class="mb-2 text-center">
-            <a href="https://maps.app.goo.gl/6zumL8SkWyfrt4Sn9" target="_blank" style="font-size: 14px; color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255, 255, 255, 0.7)'">
-              Gedung Graha Nusa Tiga, Jl. Proklamasi No.25, Pegangsaan, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10320.
-            </a>
-          </p>
-          <p class="mb-1 text-center">
-            <strong>Tlp:</strong>
-            <a href="tel:+62213926578" style="font-size: 14px; color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255, 255, 255, 0.7)'">
-              +6221-3926578
-            </a>
-          </p>
-          <p class="mb-0 text-center">
-            <strong>Email Persuratan:</strong>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@sinergigula.com" style="font-size: 14px; color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255, 255, 255, 0.7)'">
-              contact@sinergigula.com
-            </a>
-          </p>
+  <footer id="footer" class="footer dark-background text-center">
+    <div class="container footer-top text-center">
+      
+      <!-- Row 1: Informasi Perusahaan -->
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-lg-8 col-md-10 footer-about text-center">
+          <a href="index.html" class="d-flex align-items-center justify-content-center mb-2">
+            <span class="sitename text-center">PT Sinergi Gula Nusantara</span>
+          </a>
+          <div class="footer-contact text-center">
+            <p class="mb-1 text-center"><strong>Kantor Pusat</strong></p>
+            <p class="mb-2 text-center">
+              <a href="https://maps.app.goo.gl/6zumL8SkWyfrt4Sn9" target="_blank" style="font-size: 14px; color: rgba(255, 255, 255, 0.7); text-decoration: none;">
+                Gedung Graha Nusa Tiga, Jl. Proklamasi No.25, Pegangsaan, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10320.
+              </a>
+            </p>
+            <p class="mb-1 text-center">
+              <strong>Tlp:</strong>
+              <a href="tel:+62213926578" style="font-size: 14px; color: rgba(255, 255, 255, 0.7); text-decoration: none;">
+                +6221-3926578
+              </a>
+            </p>
+            <p class="mb-0 text-center">
+              <strong>Email Persuratan:</strong>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@sinergigula.com" style="font-size: 14px; color: rgba(255, 255, 255, 0.7); text-decoration: none;">
+                contact@sinergigula.com
+              </a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Row 2: Navigasi (Beranda, Tentang Kami, Bisnis Kami, Unit Kerja) -->
-    <div class="row justify-content-center text-center mb-4">
-      <div class="col-lg-8 footer-links text-center">
-        <ul class="d-flex flex-wrap justify-content-center gap-3 list-unstyled p-0 m-0 text-center">
-          <li class="text-center"><i class="bi bi-chevron-right"></i> <a href="index.html">Beranda</a></li>
-          <li class="text-center"><i class="bi bi-chevron-right"></i> <a href="about.html">Tentang Kami</a></li>
-          <li class="text-center"><i class="bi bi-chevron-right"></i> <a href="services.html">Bisnis Kami</a></li>
-          <li class="text-center"><i class="bi bi-chevron-right"></i> <a href="portfolio.html">Unit Kerja</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Row 3: Sosial Media (FB, IG, LinkedIn, YT) -->
-    <div class="row justify-content-center text-center mb-3">
-      <div class="col-auto text-center">
-        <div class="social-links d-flex justify-content-center gap-3 text-center">
-          <a href="https://www.facebook.com/people/Sinergi-Gula-Nusantara/100086951187087/"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/sinergigulanusantara/"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/sinergigulanusantara/?originalSubdomain=id"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.youtube.com/@sinergigulanusantara"><i class="bi bi-youtube"></i></a>
+      <!-- Row 2: Navigasi -->
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-lg-8 footer-links text-center">
+          <ul class="d-flex flex-wrap justify-content-center gap-3 list-unstyled p-0 m-0 text-center">
+            <li class="text-center"><i class="bi bi-chevron-right"></i> <a href="index.html">Beranda</a></li>
+            <li class="text-center"><i class="bi bi-chevron-right"></i> <a href="about.html">Tentang Kami</a></li>
+            <li class="text-center"><i class="bi bi-chevron-right"></i> <a href="services.html">Bisnis Kami</a></li>
+            <li class="text-center"><i class="bi bi-chevron-right"></i> <a href="portfolio.html">Unit Kerja</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Row 4: Hak Cipta & Didesain Oleh -->
-  <div class="container copyright text-center mt-4 border-top pt-3">
-    <p class="mb-1 text-center">© <span>Hak Cipta</span> <strong class="px-1 sitename">PT Sinergi Gula Nusantara</strong> <span>Seluruh Hak Dilindungi</span></p>
-    <div class="credits text-center">
-      Didesain oleh <strong>F2</strong>
-    </div>
-  </div>
+      <!-- Row 3: Sosial Media -->
+      <div class="row justify-content-center text-center mb-3">
+        <div class="col-auto text-center">
+          <div class="social-links d-flex justify-content-center gap-3 text-center">
+            <a href="https://www.facebook.com/people/Sinergi-Gula-Nusantara/100086951187087/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sinergigulanusantara/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/sinergigulanusantara/?originalSubdomain=id"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@sinergigulanusantara"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
 
-</footer>
- 
+    </div>
+
+    <!-- Row 4: Hak Cipta -->
+    <div class="container copyright text-center mt-4 border-top pt-3">
+      <p class="mb-1 text-center">© <span>Hak Cipta</span> <strong class="px-1 sitename">PT Sinergi Gula Nusantara</strong> <span>Seluruh Hak Dilindungi</span></p>
+      <div class="credits text-center">
+        Didesain oleh <strong>F2</strong>
+      </div>
+    </div>
+  </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
- 
-  <!-- Preloader -->
-  <div id="preloader"></div>
- 
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
- 
+
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
- 
+
 </body>
- 
 </html>
- 
