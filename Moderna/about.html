@@ -8,14 +8,13 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
+ <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,61 +26,93 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- CSS select2 (untuk dropdown Bagian) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
+
   <style>
-    /* Header Latar Putih & Shadow agar Logo Terlihat Jelas */
-    .header {
-      background-color: #ffffff !important;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    }
+    /* Dropdown select2 selalu selebar kolomnya */
+    .select2-container { width: 100% !important; }
 
-    .header .sitename {
-      color: #333333 !important;
-    }
+    /* Dropdown harus tampil di atas tombol, card, dan footer */
+    .select2-container--open,
+    .select2-container--open .select2-dropdown,
+    .select2-dropdown { z-index: 99999 !important; }
 
-    /* Navigasi */
-    .navmenu a {
-      color: #333333 !important;
+    /* Rapikan kotak pencarian di dalam dropdown */
+    .select2-search--dropdown { padding: 8px; }
+    .select2-search--dropdown .select2-search__field {
+      width: 100%;
+      padding: 6px 10px;
+      border: 1px solid #ced4da;
+      border-radius: 6px;
+      outline: none;
     }
-    .navmenu a.active, .navmenu a:hover {
-      color: #0d6efd !important;
-    }
-
-    /* Justify Paragraf & Text-Center Judul */
-    p {
-      text-align: justify;
-    }
-    .section-title h2, .section-title p {
-      text-align: center !important;
-    }
+    .select2-results__option { padding: 8px 12px; }
   </style>
+  <style>
+  /* Header Latar Putih */
+  .header {
+    background-color: #ffffff !important;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Judul Situs di Header */
+  .header .sitename {
+    color: #333333 !important;
+  }
+
+  /* Navigasi: Hanya Beranda yang Biru, Lainnya Hitam/Abu */
+  .navmenu a {
+    color: #333333 !important;
+  }
+  .navmenu a.active {
+    color: #0d6efd !important; /* Warna biru untuk Beranda */
+  }
+  .navmenu a:hover {
+    color: #0d6efd !important;
+  }
+
+  /* Paragraf Rata Kiri-Kanan (Justify) */
+  p {
+    text-align: justify;
+  }
+</style>
 </head>
 
-<body class="about-page">
+<body class="starter-page-page">
 
-  <!-- ===== HEADER ===== -->
+  <!-- ===== HEADER UTAMA ===== -->
   <header id="header" class="header d-flex align-items-center fixed-top" style="height: auto !important; padding: 15px 0;">
     <div class="container-fluid container-xxxl position-relative d-flex align-items-center justify-content-between">
+
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="Logo SGN" style="height: 80px !important; width: auto !important; object-fit: contain;">
+        <img src="assets/img/logo.png" alt="Logo SGN" style="height: 80px !important; max-height: none !important; width: auto !important; object-fit: contain;">
         <h1 class="sitename">PT Sinergi Gula Nusantara</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li class="dropdown"><a href="about.html" class="active"><span>Tentang Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="about.html" >Beranda</a></li>
+          <li class="dropdown"><a href="index.html"><span>Tentang Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="about.html#sejarah">Sejarah</a></li>
+              <li><a href="index.html#about">Profil Perusahaan</a></li>
+              <li><a href="index.html#history">Sejarah</a></li>
+              <li><a href="index.html#services">Visi &amp; Misi</a></li>
+              <li><a href="index.html#features">Struktur organisasi</a></li>
+              <li><a href="contact.html">Hubungi Kami</a></li>
             </ul>
           </li>
-          <li><a href="services.html">Bisnis Kami</a></li>
-          <li><a href="portfolio.html">Unit Kerja</a></li>
-          <li><a href="Karir.html">Karir</a></li>
+          <li><a href="services.html">Unit Kerja</a></li>
+          <li><a href="portfolio.html">Produksi</a></li>
+          <li><a href="team.html">Karir</a></li>
+          <li><a href="blog.html">Publikasi</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
     </div>
   </header>
+
 
   <main class="main">
 
