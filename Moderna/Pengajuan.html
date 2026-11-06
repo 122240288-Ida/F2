@@ -304,7 +304,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 <script>
   $(document).ready(function () {
-    // Inisialisasi Select2 dengan Bahasa Indonesia
+    // Inisialisasi Select2
     $("#select2Bagian").select2({
       width: "100%",
       placeholder: "Pilih Bagian",
@@ -315,7 +315,7 @@
       }
     });
 
-    // Event saat tombol "Pilih" diklik
+    // Event saat tombol "Pilih & Kirim Email" diklik
     $("#pilihan").on("click", function () {
       var bagianSelected = $("#select2Bagian").val();
 
@@ -333,8 +333,11 @@
         "Terima kasih."
       );
 
-      // Membuka aplikasi email / Gmail secara otomatis
-      window.location.href = "mailto:" + emailTujuan + "?subject=" + subject + "&body=" + body;
+      // Link Gmail Web Compose
+      var gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=" + emailTujuan + "&su=" + subject + "&body=" + body;
+
+      // Membuka langsung di tab baru saat diklik (aman dari blokir pop-up Chrome)
+      window.open(gmailUrl, '_blank');
     });
   });
 </script>
